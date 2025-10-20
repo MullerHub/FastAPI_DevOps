@@ -4,6 +4,7 @@ __pycache__/
 .venv
 venv/
 env/
+github-actions-key*
 
 # macOS
 .DS_Store
