@@ -64,4 +64,4 @@ jobs:
           git add deployment.yaml
           # O comando abaixo evita um commit vazio se a imagem não mudou
           git diff-index --quiet HEAD || git commit -m "ci: atualiza imagem para ${{ steps.meta.outputs.version }}"
-          git push origin main``
+          git push origin main
