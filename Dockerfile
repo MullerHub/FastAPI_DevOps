@@ -17,6 +17,7 @@ WORKDIR /app
 
 # Copiar dependências instaladas do estágio de build
 COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
 COPY --from=builder /app /app
 
 # Expor a porta e definir o comando de execução
