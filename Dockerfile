@@ -1,5 +1,5 @@
 # ---- Estágio de Build ----
-FROM python:3.9-slim as builder
+FROM python:3.11-slim as builder
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY main.py .
 
 # ---- Estágio Final ----
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
