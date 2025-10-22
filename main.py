@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Versao final funcionando!"}
+    return {"Meu CI/CD com ArgoCD funciona!"}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=80)
