@@ -111,6 +111,9 @@ Abaixo estão as evidências que comprovam o funcionamento de cada etapa do proj
 
 A imagem da aplicação é buildada e enviada ao Docker Hub automaticamente. O print abaixo mostra as tags das imagens no repositório `mullerhub/hello-app`. Note que as imagens são **multi-arquitetura** (indicado pelo `linux/amd64` e `linux/arm64`), o que permite que elas rodem tanto em Macs M1/M2 (ARM) quanto em servidores padrão (AMD64).
 
+Nossa imagem do dockerhub está aqui:
+https://hub.docker.com/repository/docker/mullerhub/hello-app/general
+
 ![Github commits](./imgs/docker-tags.png)
 
 ---
@@ -147,5 +150,3 @@ Em detalhes, o primeiro terminal acima mostra os pods `kubectl get pods`
 o segundo terminal é aonde nosso ArgoCD esta rodando com `kubectl port-forward svc/argocd-server -n argocd 8081:443` ()
 detalhe para esse passo aqui, o argoCD esta na porta 8081, para não entrar em conflito com nossa aplicacao que está na 8080, no ultimo terminal está nossa aplicação `kubectl port-forward svc/hello-app-service 8080:80`
 
-Nossa imagem do dockerhub está aqui:
-https://hub.docker.com/repository/docker/mullerhub/hello-app/general
