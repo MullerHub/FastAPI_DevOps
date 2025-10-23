@@ -141,7 +141,7 @@ O ArgoCD detecta a mudança no repositório de manifestos e sincroniza o estado 
 
 A sincronização do ArgoCD resulta em um Rolling Update dos Pods no Kubernetes. O comando `kubectl get pods` mostra os dois pods da nossa aplicação em status `Running`.
 
-![Github commits](./imgs/terminal-respostas.png)
+![Github commits](./imgs/terminal.png)
 
 Em detalhes, o primeiro terminal acima mostra os pods `kubectl get pods`
 o segundo terminal é aonde nosso ArgoCD esta rodando com `kubectl port-forward svc/argocd-server -n argocd 8081:443` ()
