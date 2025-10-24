@@ -114,7 +114,7 @@ A imagem da aplicação é buildada e enviada ao Docker Hub automaticamente. O p
 Nossa imagem do dockerhub está aqui:
 https://hub.docker.com/repository/docker/mullerhub/hello-app/general
 
-![Github commits](./imgs/docker-tags.png)
+![Tela do ArgoCD](https://github.com/user-attachments/assets/ff228710-20bc-452e-aece-c79cdd34cdac)
 
 ---
 
