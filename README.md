@@ -124,11 +124,11 @@ Após o push da nova imagem, o GitHub Actions faz um commit automático no repos
 
 O print abaixo mostra o **histórico de commits** do repositório de manifestos, com os commits feitos pelo "GitHub Actions Bot".
 
-![Github commits](./imgs/github-commits.png)
+![Github commits](./docs/imgs/github-commits.png)
 
 O "diff" (diferença) de um desses commits mostra claramente a mudança da tag:
 
-![Github commits](./imgs/github-diff.png)
+![Github commits](./docs/imgs/github-diff.png)
 
 ---
 
@@ -136,7 +136,7 @@ O "diff" (diferença) de um desses commits mostra claramente a mudança da tag:
 
 O ArgoCD detecta a mudança no repositório de manifestos e sincroniza o estado do cluster. O print abaixo mostra o "card" da `hello-app` na interface do ArgoCD, com os status `Synced` (Sincronizado) e `Healthy` (Saudável).
 
-![Github commits](./imgs/argoCD.png)
+![Github commits](./docs/imgs/argoCD.png)
 
 ---
 
@@ -144,7 +144,7 @@ O ArgoCD detecta a mudança no repositório de manifestos e sincroniza o estado 
 
 A sincronização do ArgoCD resulta em um Rolling Update dos Pods no Kubernetes. O comando `kubectl get pods` mostra os dois pods da nossa aplicação em status `Running`.
 
-![Github commits](./imgs/terminal.png)
+![Github commits](./docs/imgs/terminal.png)
 
 Em detalhes, o primeiro terminal acima mostra os pods `kubectl get pods`
 o segundo terminal é aonde nosso ArgoCD esta rodando com `kubectl port-forward svc/argocd-server -n argocd 8081:443` ()
